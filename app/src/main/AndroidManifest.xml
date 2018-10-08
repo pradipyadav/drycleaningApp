@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="sony.com.k9drycleaning">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/k9"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/k9"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".SplashActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
+        <activity
+            android:name=".RateCard"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Press"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Drycleaning"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Services"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Contact_us"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".ContactUs" />
+        <activity android:name=".FeedbackActivity"></activity>
+    </application>
+
+</manifest>

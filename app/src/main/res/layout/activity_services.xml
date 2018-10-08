@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="vertical">-->
+
+
+        <!--</LinearLayout>-->
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/servicesback">
+
+    <TextView
+        android:id="@+id/toolbar_title"
+        style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:text="@string/nav_services"
+        android:textColor=" #000000 "
+        android:textSize="25sp" />
+
+    <android.support.v4.widget.Space
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/services"
+        android:fontFamily="monospace"
+        android:padding="20dp"
+        android:text="@string/drycleaning"
+        android:textAlignment="center"
+        android:textColor="#fffafa"
+        android:textSize="20sp" />
+
+    <android.support.v4.widget.Space
+        android:layout_height="23dp"
+        android:layout_width="match_parent"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/services"
+        android:fontFamily="monospace"
+        android:padding="20dp"
+        android:text="@string/washing"
+
+        android:textAlignment="center"
+        android:textColor="#fffafa"
+        android:textSize="20sp" />
+    <android.support.v4.widget.Space
+        android:layout_height="23dp"
+        android:layout_width="match_parent"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/services"
+        android:fontFamily="monospace"
+        android:padding="20dp"
+        android:text="@string/ironing"
+
+        android:textAlignment="center"
+        android:textColor="#fffafa"
+        android:textSize="20sp" />
+    <android.support.v4.widget.Space
+        android:layout_height="23dp"
+        android:layout_width="match_parent"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/services"
+        android:fontFamily="monospace"
+        android:padding="20dp"
+        android:text="@string/coloring"
+
+        android:textAlignment="center"
+        android:textColor="#fffafa"
+        android:textSize="20sp" />
+    <android.support.v4.widget.Space
+        android:layout_height="23dp"
+        android:layout_width="match_parent"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/services"
+        android:fontFamily="monospace"
+        android:padding="20dp"
+        android:text="@string/saree_roll_press"
+        android:textAlignment="center"
+
+        android:textColor="#fffafa"
+        android:textSize="20sp" />
+    <android.support.v4.widget.Space
+        android:layout_height="23dp"
+        android:layout_width="match_parent"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/services"
+        android:fontFamily="monospace"
+
+        android:padding="20dp"
+
+        android:text="@string/saree_steam_press"
+        android:textAlignment="center"
+        android:textColor="#fffafa"
+        android:textSize="20sp" />
+
+</LinearLayout>
+
+
+</LinearLayout>

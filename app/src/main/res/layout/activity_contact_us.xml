@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Contact_us"
+    tools:layout_editor_absoluteX="2dp"
+    tools:layout_editor_absoluteY="83dp">
+
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="vertical">-->
+            <!---->
+            <!---->
+        <!--</LinearLayout>-->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/toolbar_title"
+                style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="15dp"
+                android:text="@string/nav_contactus"
+                android:textColor=" #000000 "
+                android:textSize="40sp" />
+
+            <!--<android.support.v4.widget.Space-->
+                <!--android:layout_height="75dp"-->
+                <!--android:layout_width="match_parent"-->
+                <!--/>-->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_marginEnd="5dp"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_call_black_24dp"
+                android:layout_marginStart="5dp"
+                android:text="  @string/contact"
+                android:layout_marginTop="3dp"
+                android:textSize="20sp"
+                android:padding="10dp"
+                android:textColor="#fff"
+                android:background="@drawable/radius"
+
+                />
+
+            <android.support.v4.widget.Space
+                android:layout_height="15dp"
+                android:layout_width="match_parent"
+                />
+            <TextView
+                android:textColor="#fff"
+                android:background="@drawable/radius"
+                android:layout_marginEnd="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_email_black_24dp"
+                android:text="@string/email"
+                android:textSize="20sp"
+                android:padding="10dp"
+
+
+                />
+            <android.support.v4.widget.Space
+                android:layout_height="15dp"
+                android:layout_width="match_parent"
+                />
+            <TextView
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_location_on_black_24dp"
+                android:text="@string/addres1"
+                android:textSize="20sp"
+                android:padding="10dp"
+                android:textColor="#fff"
+                android:background="@drawable/radius"
+
+                />
+            <android.support.v4.widget.Space
+                android:layout_height="15dp"
+                android:layout_width="match_parent"
+                />
+            <TextView
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_location_on_black_24dp"
+                android:text="@string/addres2"
+                android:textSize="20sp"
+                android:textColor="#fff"
+                android:background="@drawable/radius"
+                android:padding="10dp"
+                />
+            <android.support.v4.widget.Space
+                android:layout_height="15dp"
+                android:layout_width="match_parent"
+                />
+            <TextView
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_location_on_black_24dp"
+                android:text="@string/addres3"
+                android:textSize="20sp"
+                android:padding="10dp"
+                android:textColor="#fff"
+                android:background="@drawable/radius"
+                />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+</android.support.constraint.ConstraintLayout>

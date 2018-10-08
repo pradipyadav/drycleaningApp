@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">K9drycleaning</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="aboutus">लाँड्री आणि ड्राय क्लीनिंग एक सेवा क्रियाकलाप आहे. पूर्वीचे कपडे हाताने धुतले होते, वॉशरचे लोक तलावांमध्ये, नद्या आणि नंतर वाळलेल्या आणि दाबले होते. परंतु आता कामाच्या भाराने दिवसभर हात धुणे जुने आहे. उच्च क्षमतेची वॉशिंग मशीन विकसित केली जातात आणि स्टीम दाबली जातात आणि कॅलेंडिंग मशीन देखील शिंकमुक्त करण्यासाठी आणि आपोआप दाबण्यासाठी येतात. स्वच्छ धुण्याचे यंत्र म्हणजे वॉशिंग मशीनच्या सहाय्याने विशिष्ट विलायक असलेल्या महाग कपडे स्वच्छ करण्याची प्रक्रिया होय. पारंपरिक वॉशिंगमध्ये पाणी मुख्य माध्यम आहे आणि डिटर्जेंट किंवा साबण धुण्यास वापरले जाते. अशा परिस्थितीत, सशक्त कपडे कमी होऊ शकतात किंवा रंग मजबूत अल्कल्यांच्या उपस्थितीत विसर्जित होऊ शकतात. इतके मौल्यवान कपडे, सरपेट्स, कोट्ट्या इ. सुक्या असतात. कोरड्या स्वच्छतेसाठी काळजी आणि व्यवस्थित प्रक्रिया आणि रसायनांची आवश्यकता असते, या कारणासाठी मुख्य शहरांमध्ये घर आणि सेवा युनिट्सवर चालणे सोपे नाही. कापडांच्या ओल्या स्वच्छतेच्या आदेशासाठी या प्रकल्पामध्ये स्वयंचलित वॉशिंग मशीन देखील असेल. ग्राहकांच्या कपड्यांना दाबण्यासाठी सुविधा उपलब्ध असेल.</string>
+
+    <string name="contact">  +९१-९५२७९३३१९९ / ९५२७९३३२९९</string>
+
+    <string name="email">rameshpasalkar1995@gmail.com</string>
+
+
+    <string name="addres1"> ०४ नीलकंठ अपार्टमेंट डीएसके रोड शेवटचा बस स्टॉप धायरीगांव पुणे ४११०४१. </string>
+
+    <string name="addres2">०१आमबाई माता मंदिर धारेश्वर मंदिराच्या मागे म्हसोबा दरा रोड धायरीगांव पुणे ४११०४१.</string>
+
+    <string name="addres3">१५ सिद्धि आर्केड ज्ञानदिप शाळे शेजारी नऱ्हे गांव पुणे ४११०४१.</string>
+
+    <string name="drycleaning">कोरडे स्वच्छता</string>
+    <string name="washing">धुणे</string>
+    <string name="ironing">इस्त्री</string>
+    <string name="coloring">रंग</string>
+    <string name="saree_roll_press">साडी रोल इस्त्री</string>
+    <string name="saree_steam_press">साडी स्टीम इस्त्री</string>
+
+    <string name="nav_ratecard">दर पत्रक</string>
+    <string name="nav_press">इस्त्री</string>
+    <string name="nav_drycleaning">कोरडे स्वच्छता</string>
+    <string name="nav_services">सेवा</string>
+    <string name="nav_contactus">संपर्क</string>
+    <string name="nav_communicate">संप्रेषण</string>
+    <string name="nav_share">सामायिक करा</string>
+    <string name="nav_feedback">अभिप्राय</string>
+    <string name="nav_termsandcondition">नियम व अटी</string>
+    <string name="nav_language">भाषा</string>
+
+
+    <string name="c_Contact">संपर्क</string>
+    <string name="c_email">ईमेल</string>
+    <string name="cb1">शाखा १</string>
+    <string name="cb2">शाखा २</string>
+    <string name="cb3">शाखा ३</string>
+
+    <string name="feedbackName">नाव</string>
+    <string name="FeedbackContact">संपर्क</string>
+    <string name="feedbackFeedback">अभिप्राय</string>
+    <string name="feedbackSubmit">जमा करा</string>
+
+</resources>

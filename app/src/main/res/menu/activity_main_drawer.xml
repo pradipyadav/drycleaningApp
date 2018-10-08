@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/ratecard"
+            android:icon="@drawable/ic_rate_card"
+            android:title="@string/nav_ratecard" />
+        <item
+            android:id="@+id/press"
+            android:icon="@drawable/ic_press"
+            android:title="@string/nav_press" />
+        <item
+            android:id="@+id/dryclean"
+            android:icon="@drawable/ic_drycleaning"
+            android:title="@string/nav_drycleaning" />
+
+        <item
+            android:id="@+id/services"
+            android:icon="@drawable/ic_services"
+            android:title="@string/nav_services" />
+
+        <item
+            android:id="@+id/contacts"
+            android:icon="@drawable/ic_contact_us"
+            android:title="@string/nav_contactus" />
+    </group>
+
+    <item android:title="@string/nav_communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="@string/nav_share" />
+            <item
+                android:id="@+id/nav_feedback"
+                android:icon="@drawable/ic_feedback"
+                android:title="@string/nav_feedback" />
+            <item
+                android:id="@+id/nav_termsandCondition"
+
+                android:title="@string/nav_termsandcondition" />
+            <item
+                android:id="@+id/changelanguage"
+
+                android:title="@string/nav_language" />
+
+        </menu>
+    </item>
+
+</menu>
