@@ -6,15 +6,14 @@
     android:layout_height="match_parent"
     tools:context=".FeedbackActivity"
     android:orientation="vertical"
-    android:padding="10dp"
-    android:background="#fcfcfc"
+    android:padding="5dp"
     android:layout_gravity="center"
     >
 
-    <!--<LinearLayout-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:orientation="horizontal">-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
 
         <TextView
             android:layout_width="match_parent"
@@ -26,193 +25,265 @@
             android:textStyle="bold"
             android:gravity="center"
             />
-    <!--</LinearLayout>-->
-
-    <!--<LinearLayout-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="350dp"-->
-        <!--android:orientation="vertical"-->
-        <!--android:layout_marginTop="60dp"-->
-        <!--android:background="@drawable/edittextfeedback"-->
-        <!--android:padding="5dp">-->
-
-        <!--<LinearLayout-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:orientation="horizontal"-->
-            <!--android:layout_gravity="center"-->
-            <!--android:layout_marginTop="10dp"-->
-            <!--android:padding="10dp"-->
-            <!--&gt;-->
-
-            <!--<TextView-->
-                <!--android:layout_width="wrap_content"-->
-                <!--android:layout_height="wrap_content"-->
-                <!--android:text="@string/feedbackName"-->
-                <!--android:padding="5dp"-->
-                <!--android:textSize="20sp"/>-->
-
-            <!--<EditText-->
-                <!--android:id="@+id/editTextName"-->
-                <!--android:layout_width="match_parent"-->
-                <!--android:layout_height="wrap_content"-->
-                <!--android:layout_marginLeft="5dp"-->
-                <!--android:background="@drawable/edittextfeedback"-->
-                <!--android:padding="10dp" />-->
-        <!--</LinearLayout>-->
-<!--<LinearLayout-->
-    <!--android:layout_width="match_parent"-->
-    <!--android:layout_height="wrap_content">-->
-
-
-
-            <!--<LinearLayout-->
-                <!--android:layout_width="match_parent"-->
-                <!--android:layout_height="wrap_content"-->
-                <!--android:orientation="horizontal"-->
-                <!--android:layout_gravity="center"-->
-                <!--android:padding="10dp"-->
-                <!--&gt;-->
-
-                <!--<TextView-->
-                    <!--android:layout_width="wrap_content"-->
-                    <!--android:layout_height="wrap_content"-->
-                    <!--android:text="@string/FeedbackContact"-->
-                    <!--android:padding="5dp"-->
-                    <!--android:textSize="20sp"/>-->
-
-                <!--<EditText-->
-                    <!--android:id="@+id/editTextContact"-->
-                    <!--android:layout_width="match_parent"-->
-                    <!--android:layout_height="wrap_content"-->
-                    <!--android:layout_marginLeft="5dp"-->
-                    <!--android:background="@drawable/edittextfeedback"-->
-                    <!--android:inputType="number"-->
-                    <!--android:maxLength="10"-->
-                    <!--android:padding="10dp" />-->
-            <!--</LinearLayout>-->
-
-    <!--</LinearLayout>-->
-
-        <!--<LinearLayout-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:orientation="horizontal"-->
-            <!--android:layout_gravity="center"-->
-            <!--android:padding="10dp">-->
-
-            <!--<LinearLayout-->
-                <!--android:layout_width="match_parent"-->
-                <!--android:layout_height="wrap_content"-->
-                <!--android:orientation="horizontal">-->
-
-                <!--<TextView-->
-                    <!--android:layout_width="wrap_content"-->
-                    <!--android:layout_height="wrap_content"-->
-                    <!--android:text="@string/feedbackFeedback"-->
-                    <!--android:padding="5dp"-->
-                    <!--android:layout_gravity="start"-->
-                    <!--android:textSize="20sp"/>-->
-
-                <!--<EditText-->
-                    <!--android:id="@+id/editTextFeedback"-->
-                    <!--android:layout_width="match_parent"-->
-                    <!--android:layout_height="100dp"-->
-                    <!--android:layout_marginLeft="5dp"-->
-                    <!--android:background="@drawable/edittextfeedback"-->
-                    <!--android:inputType="textMultiLine"-->
-                    <!--android:padding="5dp" />-->
-
-            <!--</LinearLayout>-->
-
-        <!--</LinearLayout>-->
-
-        <!--<Button-->
-            <!--android:id="@+id/btnSubmit"-->
-            <!--android:layout_width="wrap_content"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:layout_gravity="end"-->
-            <!--android:layout_marginTop="15dp"-->
-            <!--android:padding="5dp"-->
-            <!--android:text="@string/feedbackSubmit" />-->
-    <!--</LinearLayout>-->
-
-    //  New Layout Starting
+    </LinearLayout>
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+       >
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="60dp"
+            android:layout_height="match_parent"
             android:orientation="vertical">
 
-            <LinearLayout
+            <EditText
+                android:id="@+id/editTextName"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="5dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
                 android:background="@drawable/edittextfeedback"
+                android:hint="@string/feedbackName"
+                android:padding="10dp"
+                android:layout_marginTop="50dp"/>
 
-                android:orientation="vertical"
-                android:padding="15dp">
+            <EditText
+                android:id="@+id/editTextContact"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/edittextfeedback"
+                android:hint="@string/FeedbackContact"
+                android:inputType="number"
+                android:maxLength="10"
+                android:padding="10dp"
+                android:layout_marginTop="20dp"/>
 
-                <android.support.design.widget.TextInputLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="20dp">
+            <EditText
+                android:id="@+id/editTextFeedback"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/edittextfeedback"
+                android:gravity="top|left"
+                android:hint="@string/feedbackFeedback"
+                android:inputType="textMultiLine"
+                android:padding="5dp"
+                android:layout_marginTop="20dp"/>
 
-
-                    <EditText
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:hint="@string/feedbackName"
-                        android:padding="10dp" />
-
-
-                </android.support.design.widget.TextInputLayout>
-
-                <android.support.design.widget.TextInputLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="20dp">
-
-                    <EditText
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:hint="@string/FeedbackContact"
-                        android:inputType="number"
-                        android:maxLength="10"
-                        android:padding="10dp" />
-                </android.support.design.widget.TextInputLayout>
-
-                <android.support.design.widget.TextInputLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="20dp">
-
-                    <EditText
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:hint="@string/feedbackFeedback"
-                        android:inputType="textMultiLine"
-                        android:padding="10dp" />
-                </android.support.design.widget.TextInputLayout>
-
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="end"
-                    android:background="@drawable/edittextfeedback"
-                    android:text="@string/feedbackSubmit" />
-            </LinearLayout>
+            <Button
+                android:id="@+id/btnSubmit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/edittextfeedback"
+                android:padding="5dp"
+                android:text="@string/feedbackSubmit" />
 
         </LinearLayout>
+
     </ScrollView>
 
+    <!--!st View-->
 
-// New layout ending
+    <!--<ScrollView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent">-->
 
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:background="#000"-->
+            <!--android:orientation="vertical">-->
+
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:layout_marginTop="10dp"-->
+                <!--android:background="#000"-->
+                <!--android:orientation="horizontal"-->
+                <!--android:padding="10dp"-->
+
+                <!--&gt;-->
+
+                <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:text="@string/feedbackName"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:padding="5dp"&ndash;&gt;-->
+                <!--&lt;!&ndash;android:textSize="20sp"/>&ndash;&gt;-->
+
+                <!--<EditText-->
+                    <!--android:id="@+id/editTextName"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="60dp"-->
+                    <!--android:layout_marginLeft="5dp"-->
+                    <!--android:background="@drawable/edittextfeedback"-->
+                    <!--android:hint="@string/feedbackName"-->
+                    <!--android:padding="10dp" />-->
+            <!--</LinearLayout>-->
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content">-->
+
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_gravity="center"-->
+                    <!--android:orientation="horizontal"-->
+                    <!--android:padding="10dp">-->
+
+                    <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:text="@string/FeedbackContact"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:padding="5dp"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:textSize="20sp"/>&ndash;&gt;-->
+
+                    <!--<EditText-->
+                        <!--android:id="@+id/editTextContact"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="60dp"-->
+                        <!--android:layout_marginLeft="5dp"-->
+                        <!--android:background="@drawable/edittextfeedback"-->
+                        <!--android:hint="@string/FeedbackContact"-->
+                        <!--android:inputType="number"-->
+                        <!--android:maxLength="10"-->
+                        <!--android:padding="10dp" />-->
+                <!--</LinearLayout>-->
+
+            <!--</LinearLayout>-->
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:orientation="horizontal"-->
+                <!--android:padding="10dp">-->
+
+                <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:orientation="horizontal">-->
+
+                    <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:text="@string/feedbackFeedback"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:padding="5dp"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:layout_gravity="start"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:textSize="20sp"/>&ndash;&gt;-->
+
+                    <!--<EditText-->
+                        <!--android:id="@+id/editTextFeedback"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="180dp"-->
+                        <!--android:layout_marginLeft="5dp"-->
+                        <!--android:background="@drawable/edittextfeedback"-->
+                        <!--android:gravity="top|left"-->
+                        <!--android:hint="@string/feedbackFeedback"-->
+                        <!--android:inputType="textMultiLine"-->
+                        <!--android:padding="5dp" />-->
+
+                <!--</LinearLayout>-->
+
+            <!--</LinearLayout>-->
+
+            <!--<Button-->
+                <!--android:id="@+id/btnSubmit"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:layout_marginTop="15dp"-->
+                <!--android:background=" #f74e5d   "-->
+                <!--android:padding="5dp"-->
+                <!--android:text="@string/feedbackSubmit" />-->
+        <!--</LinearLayout>-->
+
+        <!--New Layout Starting-->
+
+        <!--<ScrollView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent">-->
+
+        <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="60dp"-->
+        <!--android:orientation="vertical">-->
+
+        <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_margin="5dp"-->
+        <!--android:background="@drawable/edittextfeedback"-->
+
+        <!--android:orientation="vertical"-->
+        <!--android:padding="15dp">-->
+
+        <!--<android.support.design.widget.TextInputLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="20dp">-->
+
+
+        <!--<EditText-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:hint="@string/feedbackName"-->
+        <!--android:padding="10dp" />-->
+
+
+        <!--</android.support.design.widget.TextInputLayout>-->
+
+        <!--<android.support.design.widget.TextInputLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="20dp">-->
+
+        <!--<EditText-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:hint="@string/FeedbackContact"-->
+        <!--android:inputType="number"-->
+        <!--android:maxLength="10"-->
+        <!--android:padding="10dp" />-->
+        <!--</android.support.design.widget.TextInputLayout>-->
+
+        <!--<android.support.design.widget.TextInputLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="20dp">-->
+
+        <!--<EditText-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:hint="@string/feedbackFeedback"-->
+        <!--android:inputType="textMultiLine"-->
+        <!--android:padding="10dp" />-->
+        <!--</android.support.design.widget.TextInputLayout>-->
+
+        <!--<Button-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="end"-->
+        <!--android:background="@drawable/edittextfeedback"-->
+        <!--android:text="@string/feedbackSubmit" />-->
+        <!--</LinearLayout>-->
+
+        <!--</LinearLayout>-->
+        <!--</ScrollView>-->
+
+
+        <!--New layout ending-->
+    <!--</ScrollView>-->
 </LinearLayout>
 

@@ -6,10 +6,17 @@
     android:layout_height="match_parent"
     tools:context=".Press">
 
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorBlueJeans"
+        app:popupTheme="@style/AppTheme.PopupOverlay" />
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="?attr/actionBarSize"
         android:orientation="vertical">
+
 
         <TextView
             android:id="@+id/toolbar_title"
@@ -17,12 +24,1369 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginTop="15dp"
-            android:layout_marginBottom="15dp"
+           android:gravity="center"
+            android:layout_marginTop="12dp"
             android:text="@string/nav_press"
             android:textColor=" #000000 "
             android:textSize="25sp" />
     </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="55dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!--View first-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="4"
+                android:padding="1dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:text="@string/product"
+                    android:background="@drawable/dry_cleaning_background"
+                    android:padding="4dp"
+                    android:textSize="20sp"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:textColor="#000000"
+                    android:text="@string/quantity"
+                    android:background="@drawable/dry_cleaning_background"
+                    android:padding="4dp"
+                    android:textSize="20sp"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:textColor="#000000"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/dry_cleaning_background"
+                    android:text="@string/rate"
+                    android:padding="4dp"
+                    android:textSize="20sp"
+                    android:gravity="center"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minWidth="5dp">
+
+            </View>
+
+            <!--Second row Start-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+                android:weightSum="4"
+                android:padding="1dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:textColor="#000000"
+                    android:layout_weight="2"
+                    android:layout_height="wrap_content"
+                    android:text="@string/shirt"
+                    android:padding="4dp"
+                    android:textSize="20sp"
+                    android:gravity="center"
+                    android:background="@drawable/dry_cleaning_background"
+                    />
+
+                <EditText
+                    android:id="@+id/qPressShirt"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+
+                    android:background="@drawable/dry_cleaning_background"
+                    android:layout_height="match_parent"
+                    android:padding="4dp"
+                    android:textSize="20sp"
+                    android:inputType="number"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:id="@+id/rPressShirt"
+                    android:background="@drawable/dry_cleaning_background"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:padding="4dp"
+                    android:textSize="20sp"
+                    android:gravity="center"/>
+            </LinearLayout>
+
+            <!--Second row end-->
+
+            <!--Third row Start-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="4"
+                android:padding="1dp">
+
+                <TextView
+                    android:background="@drawable/dry_cleaning_background"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:text="@string/pant"
+                    android:padding="4dp"
+                    android:textSize="20sp"
+                    android:gravity="center"/>
+
+                <EditText
+                    android:id="@+id/qPressPant"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:padding="4dp"
+                    android:textSize="20sp"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:background="@drawable/dry_cleaning_background"
+                    />
+
+                <TextView
+                    android:id="@+id/rPressPant"
+                    android:background="@drawable/dry_cleaning_background"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:padding="4dp"
+                    android:textSize="20sp"
+                    android:gravity="center"/>
+            </LinearLayout>
+
+            <!--Second row end-->
+            <!--Second row Start-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="4"
+                android:padding="1dp">
+
+                <TextView
+                    android:layout_width="0dp"
+
+                    android:background="@drawable/dry_cleaning_background"
+                    android:layout_weight="2"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:text="@string/shirtStarch"
+                    android:padding="4dp"
+                    android:textSize="20sp"
+                    android:gravity="center"/>
+
+                <EditText
+                    android:id="@+id/qPressShirtStarch"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+
+                    android:layout_weight="1"
+                    android:background="@drawable/dry_cleaning_background"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:padding="4dp"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/rPressShirtStarch"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/dry_cleaning_background"
+                    android:layout_height="match_parent"
+                    android:padding="4dp"
+                    android:textSize="20sp"
+                    android:gravity="center"/>
+            </LinearLayout>
+
+            <!--Second row end-->
+            <!--Second row Start-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="4"
+                android:padding="1dp">
+
+                <TextView
+                    android:layout_width="0dp"
+
+                    android:background="@drawable/dry_cleaning_background"
+                    android:layout_weight="2"
+                    android:textColor="#000000"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Pant_Starch"
+                    android:padding="4dp"
+                    android:textSize="20sp"
+                    android:gravity="center"/>
+
+                <EditText
+                    android:id="@+id/qPressPantStarch"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/dry_cleaning_background"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:padding="4dp"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/rPressPantStarch"
+                    android:layout_width="0dp"
+                    android:background="@drawable/dry_cleaning_background"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:padding="4dp"
+                    android:textSize="20sp"
+                    android:gravity="center"/>
+            </LinearLayout>
+
+            <!--Second row end-->
+            <!--Second row Start-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="4"
+                android:padding="1dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:background="@drawable/dry_cleaning_background"
+
+                    android:textColor="#000000"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Kurta"
+                    android:padding="4dp"
+                    android:textSize="20sp"
+                    android:gravity="center"/>
+
+                <EditText
+                    android:id="@+id/qPressKurta"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+
+                    android:layout_weight="1"
+                    android:background="@drawable/dry_cleaning_background"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:padding="4dp"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/rPressKurta"
+                    android:layout_width="0dp"
+                    android:background="@drawable/dry_cleaning_background"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:padding="4dp"
+                    android:textSize="20sp"
+                    android:gravity="center"/>
+            </LinearLayout>
+
+            <!--Second row end-->
+
+            <!--Second row Start-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="4"
+                android:padding="1dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:background="@drawable/dry_cleaning_background"
+                    android:textColor="#000000"
+
+                    android:layout_height="wrap_content"
+                    android:text="@string/Kurtatwopiece"
+                    android:padding="4dp"
+                    android:textSize="20sp"
+                    android:gravity="center"/>
+
+                <EditText
+                    android:id="@+id/qPressKurta2piece"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/dry_cleaning_background"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:padding="4dp"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/rPressKurta2piece"
+                    android:layout_width="0dp"
+                    android:background="@drawable/dry_cleaning_background"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:padding="4dp"
+                    android:textSize="20sp"
+                    android:gravity="center"/>
+            </LinearLayout>
+
+            <!--Second row end-->
+
+            <!--Second row Start-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="4"
+                android:padding="1dp">
+
+                <TextView
+                    android:background="@drawable/dry_cleaning_background"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:textColor="#000000"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Top"
+                    android:padding="4dp"
+                    android:textSize="20sp"
+                    android:gravity="center"/>
+
+                <EditText
+                    android:id="@+id/qPressTop"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/dry_cleaning_background"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:padding="4dp"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/rPressTop"
+                    android:background="@drawable/dry_cleaning_background"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:padding="4dp"
+                    android:textSize="20sp"
+                    android:gravity="center"/>
+            </LinearLayout>
+
+            <!--Second row end-->
+            <!--Second row Start-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="4"
+                android:padding="1dp">
+
+                <TextView
+                    android:id="@+id/pressSalwar"
+                    android:background="@drawable/dry_cleaning_background"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:text="@string/Salwar"
+                    android:padding="4dp"
+                    android:textSize="20sp"
+                    android:gravity="center"/>
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:id="@+id/qPressSalwar"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/dry_cleaning_background"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:padding="4dp"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/rPressSalwar"
+                    android:background="@drawable/dry_cleaning_background"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:padding="4dp"
+                    android:textSize="20sp"
+                    android:gravity="center"/>
+            </LinearLayout>
+
+            <!--Second row end-->
+            <!--Second row Start-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="4"
+                android:padding="1dp">
+
+                <TextView
+                    android:background="@drawable/dry_cleaning_background"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Dupatta"
+                    android:textColor="#000000"
+                    android:padding="4dp"
+                    android:textSize="20sp"
+                    android:gravity="center"/>
+
+                <EditText
+                    android:id="@+id/qPressDupatta"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/dry_cleaning_background"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:padding="4dp"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/rPressDupatta"
+                    android:background="@drawable/dry_cleaning_background"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:padding="4dp"
+                    android:textSize="20sp"
+                    android:gravity="center"/>
+            </LinearLayout>
+
+            <!--Second row end-->
+            <!--Second row Start-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="4"
+                android:padding="1dp">
+
+                <TextView
+                    android:background="@drawable/dry_cleaning_background"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:textColor="#000000"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Saree"
+                    android:padding="4dp"
+                    android:textSize="20sp"
+                    android:gravity="center"/>
+
+                <EditText
+                    android:id="@+id/qPressSaree"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/dry_cleaning_background"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:padding="4dp"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/rPressSaree"
+                    android:background="@drawable/dry_cleaning_background"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:padding="4dp"
+                    android:textSize="20sp"
+                    android:gravity="center"/>
+            </LinearLayout>
+
+            <!--Second row end-->
+            <!--Second row Start-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="4"
+                android:padding="1dp">
+
+                <TextView
+                    android:background="@drawable/dry_cleaning_background"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Shalu"
+                    android:textColor="#000000"
+                    android:padding="4dp"
+                    android:textSize="20sp"
+                    android:gravity="center"/>
+
+                <EditText
+                    android:id="@+id/qPressShaluPaithani"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/dry_cleaning_background"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:padding="4dp"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/rPressShaluPaithani"
+                    android:background="@drawable/dry_cleaning_background"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:padding="4dp"
+                    android:textSize="20sp"
+                    android:gravity="center"/>
+            </LinearLayout>
+
+            <!--Second row end-->
+            <!--Second row Start-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="4"
+                android:padding="1dp">
+
+                <TextView
+                    android:background="@drawable/dry_cleaning_background"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Navwari"
+                    android:textColor="#000000"
+                    android:padding="4dp"
+                    android:textSize="20sp"
+                    android:gravity="center"/>
+
+                <EditText
+                    android:id="@+id/qPressNavwari"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/dry_cleaning_background"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:padding="4dp"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/rPressNavwari"
+                    android:background="@drawable/dry_cleaning_background"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:padding="4dp"
+                    android:textSize="20sp"
+                    android:gravity="center"/>
+            </LinearLayout>
+
+            <!--Second row end-->
+            <!--Second row Start-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="4"
+                android:padding="1dp">
+
+                <TextView
+                    android:background="@drawable/dry_cleaning_background"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:text="@string/Blauz"
+                    android:padding="4dp"
+                    android:textSize="20sp"
+                    android:gravity="center"/>
+
+                <EditText
+                    android:id="@+id/qPressBlause"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/dry_cleaning_background"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:padding="4dp"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/rPressBlause"
+                    android:background="@drawable/dry_cleaning_background"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:padding="4dp"
+                    android:textSize="20sp"
+                    android:gravity="center"/>
+            </LinearLayout>
+
+            <!--Second row end-->
+            <!--Second row Start-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="4"
+                android:padding="1dp">
+
+                <TextView
+                    android:background="@drawable/dry_cleaning_background"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:textColor="#000000"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Panjabi_Suit"
+                    android:padding="4dp"
+                    android:textSize="20sp"
+                    android:gravity="center"/>
+
+                <EditText
+                    android:id="@+id/qPressPunjabiSuit"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/dry_cleaning_background"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:padding="4dp"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/rPressPunjabiSuit"
+                    android:background="@drawable/dry_cleaning_background"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:padding="4dp"
+                    android:textSize="20sp"
+                    android:gravity="center"/>
+            </LinearLayout>
+
+            <!--Second row end-->
+            <!--Second row Start-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="4"
+                android:padding="1dp">
+
+                <TextView
+                    android:id="@+id/DhotarSohale"
+                    android:background="@drawable/dry_cleaning_background"
+                    android:layout_width="0dp"
+                    android:textColor="#000000"
+                    android:layout_weight="2"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Dhotar_Sohale"
+                    android:padding="4dp"
+                    android:textSize="20sp"
+                    android:gravity="center"/>
+
+                <EditText
+                    android:id="@+id/qPressDhotarSohale"
+                    android:inputType="number"
+                    android:background="@drawable/dry_cleaning_background"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:padding="4dp"
+                    android:textSize="20sp"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:id="@+id/rPressDhotarSohale"
+                    android:background="@drawable/dry_cleaning_background"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:padding="4dp"
+                    android:textSize="20sp"
+                    android:gravity="center"/>
+            </LinearLayout>
+
+            <!--Second row end-->
+            <!--Second row Start-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="4"
+                android:padding="1dp">
+
+                <TextView
+                    android:id="@+id/coat"
+                    android:background="@drawable/dry_cleaning_background"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:text="@string/Coat"
+                    android:padding="4dp"
+                    android:textSize="20sp"
+                    android:gravity="center"/>
+
+                <EditText
+                    android:id="@+id/qPressCoat"
+                    android:inputType="number"
+                    android:background="@drawable/dry_cleaning_background"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:padding="4dp"
+                    android:textSize="20sp"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:id="@+id/rPressCoat"
+                    android:background="@drawable/dry_cleaning_background"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:padding="4dp"
+                    android:textSize="20sp"
+                    android:gravity="center"/>
+            </LinearLayout>
+
+            <!--Second row end-->
+            <!--Second row Start-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="4"
+                android:padding="1dp">
+
+                <TextView
+                    android:id="@+id/sherwani"
+                    android:background="@drawable/dry_cleaning_background"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:text="@string/Sherwani"
+                    android:padding="4dp"
+                    android:textSize="20sp"
+                    android:gravity="center"/>
+
+                <EditText
+                    android:id="@+id/qPressSherwani"
+                    android:inputType="number"
+                    android:background="@drawable/dry_cleaning_background"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:padding="4dp"
+                    android:textSize="20sp"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:id="@+id/rPressSherwani"
+                    android:background="@drawable/dry_cleaning_background"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:padding="4dp"
+                    android:textSize="20sp"
+                    android:gravity="center"/>
+            </LinearLayout>
+
+            <!--Second row end-->
+            <!--Second row Start-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="4"
+                android:padding="1dp">
+
+                <TextView
+                    android:id="@+id/pressSweater"
+                    android:background="@drawable/dry_cleaning_background"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:textColor="#000000"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Sweater"
+                    android:padding="4dp"
+                    android:textSize="20sp"
+                    android:gravity="center"/>
+
+                <EditText
+                    android:id="@+id/qPressSweater"
+                    android:inputType="number"
+                    android:background="@drawable/dry_cleaning_background"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:padding="4dp"
+                    android:textSize="20sp"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:id="@+id/rPressSweater"
+                    android:background="@drawable/dry_cleaning_background"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:padding="4dp"
+                    android:textSize="20sp"
+                    android:gravity="center"/>
+            </LinearLayout>
+
+            <!--Second row end-->
+            <!--Second row Start-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="4"
+                android:padding="1dp">
+
+                <TextView
+                    android:id="@+id/bedsheetSingle"
+                    android:background="@drawable/dry_cleaning_background"
+                    android:textColor="#000000"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Bedsheet_Single"
+                    android:padding="4dp"
+                    android:textSize="20sp"
+                    android:gravity="center"/>
+
+                <EditText
+                    android:id="@+id/qPressbedsheetSingle"
+                    android:inputType="number"
+                    android:background="@drawable/dry_cleaning_background"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:padding="4dp"
+                    android:textSize="20sp"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:id="@+id/rPressbedsheetSingle"
+                    android:background="@drawable/dry_cleaning_background"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:padding="4dp"
+                    android:textSize="20sp"
+                    android:gravity="center"/>
+            </LinearLayout>
+
+            <!--Second row end-->
+            <!--Second row Start-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="4"
+                android:padding="1dp">
+
+                <TextView
+                    android:id="@+id/pressbedsheetDouble"
+                    android:background="@drawable/dry_cleaning_background"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:textColor="#000000"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Bedsheet_Double"
+                    android:padding="4dp"
+                    android:textSize="20sp"
+                    android:gravity="center"/>
+
+                <EditText
+                    android:id="@+id/qPressbedsheetDouble"
+                    android:inputType="number"
+                    android:background="@drawable/dry_cleaning_background"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:padding="4dp"
+                    android:textSize="20sp"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:id="@+id/rPressbedsheetDouble"
+                    android:background="@drawable/dry_cleaning_background"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:padding="4dp"
+                    android:textSize="20sp"
+                    android:gravity="center"/>
+            </LinearLayout>
+
+            <!--Second row end-->
+            <!--Second row Start-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="4"
+                android:padding="1dp">
+
+                <TextView
+                    android:id="@+id/pressSolaSingChadar"
+                    android:background="@drawable/dry_cleaning_background"
+                    android:textColor="#000000"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Solapur_Single_Chadar"
+                    android:padding="4dp"
+                    android:textSize="20sp"
+                    android:gravity="center"/>
+
+                <EditText
+                    android:id="@+id/qPressSolaSingChadar"
+                    android:inputType="number"
+                    android:background="@drawable/dry_cleaning_background"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:padding="4dp"
+                    android:textSize="20sp"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:id="@+id/rPressSolaSingChadar"
+                    android:background="@drawable/dry_cleaning_background"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:padding="4dp"
+                    android:textSize="20sp"
+                    android:gravity="center"/>
+            </LinearLayout>
+
+            <!--Second row end-->
+            <!--Second row Start-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="4"
+                android:padding="1dp">
+
+                <TextView
+                    android:id="@+id/pressSolaDoubleChadar"
+                    android:background="@drawable/dry_cleaning_background"
+                    android:textColor="#000000"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Solapur_Double_Chadar"
+                    android:padding="4dp"
+                    android:textSize="20sp"
+                    android:gravity="center"/>
+
+                <EditText
+                    android:id="@+id/qPressSolaDoubleChadar"
+                    android:inputType="number"
+                    android:background="@drawable/dry_cleaning_background"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:padding="4dp"
+                    android:textSize="20sp"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:id="@+id/rPressSolaDoubleChadar"
+                    android:background="@drawable/dry_cleaning_background"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:padding="4dp"
+                    android:textSize="20sp"
+                    android:gravity="center"/>
+            </LinearLayout>
+
+            <!--Second row end-->
+            <!--Second row Start-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="4"
+                android:padding="1dp">
+
+                <TextView
+                    android:id="@+id/pressBlanketSingle"
+                    android:background="@drawable/dry_cleaning_background"
+                    android:layout_width="0dp"
+                    android:textColor="#000000"
+                    android:layout_weight="2"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Blanket_Single"
+                    android:padding="4dp"
+                    android:textSize="20sp"
+                    android:gravity="center"/>
+
+                <EditText
+                    android:id="@+id/qPressBlanketSingle"
+                    android:inputType="number"
+                    android:background="@drawable/dry_cleaning_background"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:padding="4dp"
+                    android:textSize="20sp"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:id="@+id/rPressBlanketSingle"
+                    android:background="@drawable/dry_cleaning_background"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:padding="4dp"
+                    android:textSize="20sp"
+                    android:gravity="center"/>
+            </LinearLayout>
+
+            <!--Second row end-->
+
+            <!--Second row Start-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="4"
+                android:padding="1dp">
+
+                <TextView
+                    android:id="@+id/pressBlanketDouble"
+                    android:background="@drawable/dry_cleaning_background"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:textColor="#000000"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Blanket_Double"
+                    android:padding="4dp"
+                    android:textSize="20sp"
+                    android:gravity="center"/>
+
+                <EditText
+                    android:id="@+id/qPressBlanketDouble"
+                    android:inputType="number"
+                    android:background="@drawable/dry_cleaning_background"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:padding="4dp"
+                    android:textSize="20sp"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:id="@+id/rPressBlanketDouble"
+                    android:background="@drawable/dry_cleaning_background"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:padding="4dp"
+                    android:textSize="20sp"
+                    android:gravity="center"/>
+            </LinearLayout>
+
+            <!--Second row end-->
+            <!--Second row Start-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="4"
+                android:padding="1dp">
+
+                <TextView
+                    android:id="@+id/pressCarSeatCover"
+                    android:background="@drawable/dry_cleaning_background"
+                    android:layout_width="0dp"
+                    android:textColor="#000000"
+                    android:layout_weight="2"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Car_Seat_cover"
+                    android:padding="4dp"
+                    android:textSize="20sp"
+                    android:gravity="center"/>
+
+                <EditText
+                    android:id="@+id/qPressCarSeatCover"
+                    android:inputType="number"
+                    android:background="@drawable/dry_cleaning_background"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:padding="4dp"
+                    android:textSize="20sp"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:id="@+id/rPressCarSeatCover"
+                    android:background="@drawable/dry_cleaning_background"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:padding="4dp"
+                    android:textSize="20sp"
+                    android:gravity="center"/>
+            </LinearLayout>
+
+            <!--Second row end-->
+            <!--Second row Start-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="4"
+                android:padding="1dp">
+
+                <TextView
+                    android:id="@+id/pressSchoolBag"
+                    android:background="@drawable/dry_cleaning_background"
+                    android:textColor="#000000"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:layout_height="wrap_content"
+                    android:text="@string/School_bag"
+                    android:padding="4dp"
+                    android:textSize="20sp"
+                    android:gravity="center"/>
+
+                <EditText
+                    android:id="@+id/qPressSchoolBag"
+                    android:inputType="number"
+                    android:background="@drawable/dry_cleaning_background"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:padding="4dp"
+                    android:textSize="20sp"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:id="@+id/rPressSchoolBag"
+                    android:background="@drawable/dry_cleaning_background"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:padding="4dp"
+                    android:textSize="20sp"
+                    android:gravity="center"/>
+            </LinearLayout>
+
+            <!--Second row end-->
+            <!--Second row Start-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="4"
+                android:padding="1dp">
+
+                <TextView
+                    android:id="@+id/pressCarpet"
+                    android:background="@drawable/dry_cleaning_background"
+                    android:layout_width="0dp"
+                    android:layout_weight="2"
+                    android:textColor="#000000"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Carpet"
+                    android:padding="4dp"
+                    android:textSize="20sp"
+                    android:gravity="center"/>
+
+                <EditText
+                    android:id="@+id/qPressCarpet"
+                    android:inputType="number"
+                    android:background="@drawable/dry_cleaning_background"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:padding="4dp"
+                    android:textSize="20sp"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:id="@+id/rPressCarpet"
+                    android:background="@drawable/dry_cleaning_background"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:padding="4dp"
+                    android:textSize="20sp"
+                    android:gravity="center"/>
+            </LinearLayout>
+
+            <!--Second row end-->
+
+            <!--Second row Start-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="4"
+                android:padding="1dp">
+
+                <TextView
+                    android:id="@+id/pressColor"
+                    android:background="@drawable/dry_cleaning_background"
+                    android:layout_width="0dp"
+                    android:textColor="#000000"
+                    android:layout_weight="2"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Colour_Black"
+                    android:padding="4dp"
+                    android:textSize="20sp"
+                    android:gravity="center"/>
+
+                <EditText
+                    android:id="@+id/qPressColor"
+                    android:inputType="number"
+                    android:background="@drawable/dry_cleaning_background"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:padding="4dp"
+                    android:textSize="20sp"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:id="@+id/rPressColor"
+                    android:background="@drawable/dry_cleaning_background"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:padding="4dp"
+                    android:textSize="20sp"
+                    android:gravity="center"/>
+            </LinearLayout>
+
+            <!--Second row end-->
+
+            <!--Second row Start-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="4"
+                android:padding="1dp">
+
+                <TextView
+                    android:id="@+id/pressTotal"
+                    android:background="@drawable/dry_cleaning_background"
+                    android:layout_width="0dp"
+                    android:textColor="#000000"
+                    android:layout_weight="2"
+                    android:layout_height="wrap_content"
+                    android:text="@string/total"
+                    android:padding="4dp"
+                    android:textSize="20sp"
+                    android:gravity="end"/>
+
+                <EditText
+                    android:id="@+id/qPressTotal"
+                    android:background="@drawable/dry_cleaning_background"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:padding="4dp"
+                    android:textSize="20sp"
+                    android:gravity="center"
+                    android:inputType="number"/>
+
+                <EditText
+                    android:id="@+id/rPressTotal"
+                    android:inputType="number"
+                    android:background="@drawable/dry_cleaning_background"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:padding="4dp"
+                    android:textSize="20sp"
+                    android:gravity="center"
+                    />
+            </LinearLayout>
+
+            <!--Second row end-->
+
+            <Button
+                android:id="@+id/btnPressSubmit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:padding="5dp"
+                android:text="@string/feedbackSubmit"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
 
 
 </android.support.constraint.ConstraintLayout>

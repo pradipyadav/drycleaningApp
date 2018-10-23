@@ -21,6 +21,1421 @@
             android:text="@string/nav_ratecard"
             android:textColor=" #000000 "
             android:textSize="25sp" />
-    </LinearLayout>
+
+       </LinearLayout>
+
+
+
+
+        <ScrollView
+            android:layout_marginTop="60dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <!--View first-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="4"
+                    android:padding="1dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_height="match_parent"
+                        android:text="@string/product"
+                        android:background="@drawable/dry_cleaning_background"
+                        android:padding="4dp"
+                        android:textSize="20sp"
+                        android:textColor="#000000"
+                        android:gravity="center"/>
+
+                    <TextView
+                        android:textColor="#000000"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:text="@string/nav_press"
+                        android:background="@drawable/dry_cleaning_background"
+                        android:padding="4dp"
+                        android:textSize="20sp"
+                        android:gravity="center"/>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:textColor="#000000"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/dry_cleaning_background"
+                        android:text="@string/nav_drycleaning"
+                        android:padding="4dp"
+                        android:textSize="20sp"
+                        android:gravity="center"                      />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minWidth="5dp">
+
+                </View>
+
+                <!--Second row Start-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+
+                    android:weightSum="4"
+                    android:padding="1dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:textColor="#000000"
+                        android:layout_weight="2"
+                        android:layout_height="wrap_content"
+                        android:text="@string/shirt"
+                        android:padding="4dp"
+                        android:textSize="20sp"
+                        android:gravity="center"
+                        android:background="@drawable/dry_cleaning_background"
+                        />
+
+                    <TextView
+                        android:id="@+id/press_Rate_Shirt"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:text="@string/pressshirt"
+                        android:background="@drawable/dry_cleaning_background"
+                        android:layout_height="match_parent"
+                        android:padding="4dp"
+                        android:textColor="#000000"
+                        android:textSize="20sp"
+                        android:inputType="number"
+                        android:gravity="center"/>
+
+                    <TextView
+                        android:id="@+id/dry_Rate_Shirt"
+                        android:background="@drawable/dry_cleaning_background"
+                        android:textColor="#000000"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:padding="4dp"
+                        android:textSize="20sp"
+                        android:text="@string/dryshirt"
+                        android:gravity="center"/>
+                </LinearLayout>
+
+                <!--Second row end-->
+
+                <!--Third row Start-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="4"
+                    android:padding="1dp">
+
+                    <TextView
+                        android:background="@drawable/dry_cleaning_background"
+                        android:textColor="#000000"
+
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_height="wrap_content"
+                        android:text="@string/pant"
+                        android:padding="4dp"
+                        android:textSize="20sp"
+                        android:gravity="center"/>
+
+                    <TextView
+                        android:id="@+id/press_Rate_Pant"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:padding="4dp"
+                        android:text="@string/presspant"
+                        android:textSize="20sp"
+                        android:gravity="center"
+                        android:textColor="#000000"
+                        android:inputType="number"
+                        android:background="@drawable/dry_cleaning_background"
+                        />
+
+                    <TextView
+
+                        android:id="@+id/dry_Rate_Pant"
+                        android:background="@drawable/dry_cleaning_background"
+                        android:textColor="#000000"
+                        android:text="@string/dryshirt"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:padding="4dp"
+                        android:textSize="20sp"
+                        android:gravity="center"/>
+                </LinearLayout>
+
+                <!--Second row end-->
+                <!--Second row Start-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="4"
+                    android:padding="1dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:textColor="#000000"
+
+                        android:background="@drawable/dry_cleaning_background"
+                        android:layout_weight="2"
+                        android:layout_height="wrap_content"
+                        android:text="@string/shirtStarch"
+                        android:padding="4dp"
+                        android:textSize="20sp"
+                        android:gravity="center"/>
+
+                    <TextView
+                        android:id="@+id/press_Rate_shirtStarch"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:text="@string/pressshirtStarch"
+                        android:textColor="#000000"
+
+                        android:layout_weight="1"
+                        android:background="@drawable/dry_cleaning_background"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:padding="4dp"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/dry_Rate_shirtStarch"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:text="@string/dryshirtStarch"
+                        android:textColor="#000000"
+
+                        android:background="@drawable/dry_cleaning_background"
+                        android:layout_height="match_parent"
+                        android:padding="4dp"
+                        android:textSize="20sp"
+                        android:gravity="center"/>
+                </LinearLayout>
+
+                <!--Second row end-->
+                <!--Second row Start-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="4"
+                    android:padding="1dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+
+                        android:textColor="#000000"
+                        android:background="@drawable/dry_cleaning_background"
+                        android:layout_weight="2"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Pant_Starch"
+                        android:padding="4dp"
+                        android:textSize="20sp"
+                        android:gravity="center"/>
+
+                    <TextView
+                        android:id="@+id/press_Rate_Pant_Starch"
+                        android:layout_width="0dp"
+                        android:text="@string/pressPant_Starch"
+                        android:textColor="#000000"
+
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/dry_cleaning_background"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:padding="4dp"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/dry_Rate_Pant_Starch"
+                        android:layout_width="0dp"
+
+                        android:textColor="#000000"
+                        android:background="@drawable/dry_cleaning_background"
+                        android:layout_weight="1"
+                        android:text="@string/dryPant_Starch"
+                        android:layout_height="match_parent"
+                        android:padding="4dp"
+                        android:textSize="20sp"
+                        android:gravity="center"/>
+                </LinearLayout>
+
+                <!--Second row end-->
+                <!--Second row Start-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="4"
+                    android:padding="1dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:background="@drawable/dry_cleaning_background"
+                        android:textColor="#000000"
+
+                        android:layout_height="wrap_content"
+                        android:text="@string/Kurta"
+                        android:padding="4dp"
+                        android:textSize="20sp"
+                        android:gravity="center"/>
+
+                    <TextView
+                        android:id="@+id/press_Rate_Kurta"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:text="@string/pressKurta"
+                        android:textColor="#000000"
+
+                        android:layout_weight="1"
+                        android:background="@drawable/dry_cleaning_background"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:padding="4dp"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/dry_Rate_Kurta"
+                        android:layout_width="0dp"
+                        android:text="@string/dryKurta"
+                        android:textColor="#000000"
+
+                        android:background="@drawable/dry_cleaning_background"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:padding="4dp"
+                        android:textSize="20sp"
+                        android:gravity="center"/>
+                </LinearLayout>
+
+                <!--Second row end-->
+
+                <!--Second row Start-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="4"
+                    android:padding="1dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:background="@drawable/dry_cleaning_background"
+                        android:textColor="#000000"
+
+                        android:layout_height="wrap_content"
+                        android:text="@string/Kurtatwopiece"
+                        android:padding="4dp"
+                        android:textSize="20sp"
+                        android:gravity="center"/>
+
+                    <TextView
+                        android:id="@+id/press_Rate_Kurtatwopiece"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:text="@string/pressKurtatwopiece"
+                        android:textColor="#000000"
+
+                        android:layout_weight="1"
+                        android:background="@drawable/dry_cleaning_background"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:padding="4dp"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/dry_Rate_Kurtatwopiece"
+                        android:layout_width="0dp"
+                        android:text="@string/dryKurtatwopiece"
+                        android:textColor="#000000"
+
+                        android:background="@drawable/dry_cleaning_background"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:padding="4dp"
+                        android:textSize="20sp"
+                        android:gravity="center"/>
+                </LinearLayout>
+
+                <!--Second row end-->
+
+                <!--Second row Start-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="4"
+                    android:padding="1dp">
+
+                    <TextView
+                        android:background="@drawable/dry_cleaning_background"
+                        android:layout_width="0dp"
+                        android:textColor="#000000"
+                        android:layout_weight="2"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Top"
+                        android:padding="4dp"
+                        android:textSize="20sp"
+                        android:gravity="center"/>
+
+                    <TextView
+                        android:id="@+id/press_Rate_Top"
+                        android:layout_width="0dp"
+                        android:textColor="#000000"
+                        android:layout_height="match_parent"
+                        android:text="@string/pressTop"
+                        android:layout_weight="1"
+                        android:background="@drawable/dry_cleaning_background"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:padding="4dp"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/dry_Rate_Top"
+                        android:background="@drawable/dry_cleaning_background"
+                        android:layout_width="0dp"
+                        android:text="@string/dryTop"
+                        android:textColor="#000000"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:padding="4dp"
+                        android:textSize="20sp"
+                        android:gravity="center"/>
+                </LinearLayout>
+
+                <!--Second row end-->
+                <!--Second row Start-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="4"
+                    android:padding="1dp">
+
+                    <TextView
+                        android:background="@drawable/dry_cleaning_background"
+                        android:layout_width="0dp"
+                        android:textColor="#000000"
+                        android:layout_weight="2"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Salwar"
+                        android:padding="4dp"
+                        android:textSize="20sp"
+                        android:gravity="center"/>
+
+                    <TextView
+                        android:id="@+id/press_Rate_Salwar"
+                        android:layout_width="0dp"
+                        android:text="@string/pressSalwar"
+                        android:textColor="#000000"
+
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/dry_cleaning_background"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:padding="4dp"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/dry_Rate_Salwar"
+                        android:background="@drawable/dry_cleaning_background"
+                        android:layout_width="0dp"
+                        android:textColor="#000000"
+                        android:layout_weight="1"
+                        android:text="@string/drySalwar"
+                        android:layout_height="match_parent"
+                        android:padding="4dp"
+                        android:textSize="20sp"
+                        android:gravity="center"/>
+                </LinearLayout>
+
+                <!--Second row end-->
+                <!--Second row Start-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="4"
+                    android:padding="1dp">
+
+                    <TextView
+                        android:background="@drawable/dry_cleaning_background"
+                        android:textColor="#000000"
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Dupatta"
+                        android:padding="4dp"
+                        android:textSize="20sp"
+                        android:gravity="center"/>
+
+                    <TextView
+                        android:id="@+id/press_Rate_Dupatta"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:text="@string/pressDupatta"
+                        android:textColor="#000000"
+                        android:layout_weight="1"
+                        android:background="@drawable/dry_cleaning_background"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:padding="4dp"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/dry_Rate_Dupatta"
+                        android:background="@drawable/dry_cleaning_background"
+                        android:layout_width="0dp"
+                        android:textColor="#000000"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:text="@string/dryDupatta"
+                        android:padding="4dp"
+                        android:textSize="20sp"
+                        android:gravity="center"/>
+                </LinearLayout>
+
+                <!--Second row end-->
+                <!--Second row Start-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="4"
+                    android:padding="1dp">
+
+                    <TextView
+                        android:background="@drawable/dry_cleaning_background"
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000000"
+                        android:text="@string/Saree"
+                        android:padding="4dp"
+                        android:textSize="20sp"
+                        android:gravity="center"/>
+
+                    <TextView
+                        android:id="@+id/press_Rate_Saree"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:text="@string/pressSaree"
+                        android:layout_weight="1"
+                        android:textColor="#000000"
+                        android:background="@drawable/dry_cleaning_background"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:padding="4dp"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/dry_Rate_Saree"
+                        android:background="@drawable/dry_cleaning_background"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:textColor="#000000"
+                        android:text="@string/drySaree"
+                        android:padding="4dp"
+                        android:textSize="20sp"
+                        android:gravity="center"/>
+                </LinearLayout>
+
+                <!--Second row end-->
+                <!--Second row Start-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="4"
+                    android:padding="1dp">
+
+                    <TextView
+                        android:background="@drawable/dry_cleaning_background"
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:textColor="#000000"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Shalu"
+                        android:padding="4dp"
+                        android:textSize="20sp"
+                        android:gravity="center"/>
+
+                    <TextView
+                        android:id="@+id/press_Rate_Shalu"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:textColor="#000000"
+                        android:layout_weight="1"
+                        android:text="@string/pressShalu"
+                        android:background="@drawable/dry_cleaning_background"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:padding="4dp"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/dry_Rate_Shalu"
+                        android:background="@drawable/dry_cleaning_background"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:textColor="#000000"
+                        android:text="@string/dryShalu"
+                        android:layout_height="match_parent"
+                        android:padding="4dp"
+                        android:textSize="20sp"
+                        android:gravity="center"/>
+                </LinearLayout>
+
+                <!--Second row end-->
+                <!--Second row Start-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="4"
+                    android:padding="1dp">
+
+                    <TextView
+                        android:background="@drawable/dry_cleaning_background"
+                        android:layout_width="0dp"
+                        android:textColor="#000000"
+                        android:layout_weight="2"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Navwari"
+                        android:padding="4dp"
+                        android:textSize="20sp"
+                        android:gravity="center"/>
+
+                    <TextView
+                        android:id="@+id/press_Rate_Navwari"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/dry_cleaning_background"
+                        android:textColor="#000000"
+                        android:text="@string/pressNavwari"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:padding="4dp"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/dry_Rate_Navwari"
+                        android:layout_width="0dp"
+                        android:layout_height="37dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/dry_cleaning_background"
+                        android:textColor="#000000"
+                        android:gravity="center"
+                        android:padding="4dp"
+                        android:text="@string/dryNavwari"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <!--Second row end-->
+                <!--Second row Start-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="4"
+                    android:padding="1dp">
+
+                    <TextView
+                        android:background="@drawable/dry_cleaning_background"
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:textColor="#000000"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Blauz"
+                        android:padding="4dp"
+                        android:textSize="20sp"
+                        android:gravity="center"/>
+
+                    <TextView
+                        android:id="@+id/press_Rate_Blauz"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:textColor="#000000"
+                        android:layout_weight="1"
+                        android:background="@drawable/dry_cleaning_background"
+                        android:text="@string/pressBlauz"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:padding="4dp"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/dry_Rate_Blauz"
+                        android:background="@drawable/dry_cleaning_background"
+                        android:text="@string/dryBlauz"
+                        android:textColor="#000000"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:padding="4dp"
+                        android:textSize="20sp"
+                        android:gravity="center"/>
+                </LinearLayout>
+
+                <!--Second row end-->
+                <!--Second row Start-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="4"
+                    android:padding="1dp">
+
+                    <TextView
+                        android:background="@drawable/dry_cleaning_background"
+                        android:layout_width="0dp"
+                        android:textColor="#000000"
+                        android:layout_weight="2"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Panjabi_Suit"
+                        android:padding="4dp"
+                        android:textSize="20sp"
+                        android:gravity="center"/>
+
+                    <TextView
+                        android:id="@+id/press_Rate_Panjabi_Suit"
+                        android:layout_width="0dp"
+                        android:text="@string/pressPanjabi_Suit"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:textColor="#000000"
+                        android:background="@drawable/dry_cleaning_background"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:padding="4dp"
+                        android:textSize="20sp" />
+
+                    <TextView
+                       android:id="@+id/dry_Rate_Panjabi_Suit"
+                        android:background="@drawable/dry_cleaning_background"
+                        android:layout_width="0dp"
+                        android:text="@string/dryPanjabi_Suit"
+                        android:textColor="#000000"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:padding="4dp"
+                        android:textSize="20sp"
+                        android:gravity="center"/>
+                </LinearLayout>
+
+                <!--Second row end-->
+                <!--Second row Start-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="4"
+                    android:padding="1dp">
+
+                    <TextView
+                        android:background="@drawable/dry_cleaning_background"
+                        android:layout_width="0dp"
+                        android:textColor="#000000"
+                        android:layout_weight="2"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Dhotar_Sohale"
+                        android:padding="4dp"
+                        android:textSize="20sp"
+                        android:gravity="center"/>
+
+                    <TextView
+                        android:id="@+id/press_Rate_Dhotar_Sohale"
+                        android:inputType="number"
+                        android:text="@string/pressDhotar_Sohale"
+                        android:background="@drawable/dry_cleaning_background"
+                        android:textColor="#000000"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:padding="4dp"
+                        android:textSize="20sp"
+                        android:gravity="center"/>
+
+                    <TextView
+                        android:id="@+id/dry_Rate_Dhotar_Sohale"
+                        android:background="@drawable/dry_cleaning_background"
+                        android:text="@string/dryDhotar_Sohale"
+                        android:textColor="#000000"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:padding="4dp"
+                        android:textSize="20sp"
+                        android:gravity="center"/>
+                </LinearLayout>
+
+                <!--Second row end-->
+                <!--Second row Start-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="4"
+                    android:padding="1dp">
+
+                    <TextView
+                        android:background="@drawable/dry_cleaning_background"
+                        android:textColor="#000000"
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Coat"
+                        android:padding="4dp"
+                        android:textSize="20sp"
+                        android:gravity="center"/>
+
+                    <TextView
+                        android:id="@+id/press_Rate_Coat"
+                        android:inputType="number"
+                        android:background="@drawable/dry_cleaning_background"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:textColor="#000000"
+                        android:layout_height="match_parent"
+                        android:padding="4dp"
+                        android:textSize="20sp"
+                        android:text="@string/pressCoat"
+                        android:gravity="center"/>
+
+                    <TextView
+                        android:id="@+id/dry_Rate_Coat"
+                        android:background="@drawable/dry_cleaning_background"
+                        android:textColor="#000000"
+                        android:text="@string/dryCoat"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:padding="4dp"
+                        android:textSize="20sp"
+                        android:gravity="center"/>
+                </LinearLayout>
+
+                <!--Second row end-->
+                <!--Second row Start-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="4"
+                    android:padding="1dp">
+
+                    <TextView
+                        android:background="@drawable/dry_cleaning_background"
+                        android:textColor="#000000"
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Sherwani"
+                        android:padding="4dp"
+                        android:textSize="20sp"
+                        android:gravity="center"/>
+
+                    <TextView
+                        android:inputType="number"
+                        android:id="@+id/press_Rate_Sherwani"
+                        android:text="@string/pressSherwani"
+                        android:background="@drawable/dry_cleaning_background"
+                        android:textColor="#000000"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:padding="4dp"
+                        android:textSize="20sp"
+                        android:gravity="center"/>
+
+                    <TextView
+                        android:id="@+id/dry_Rate_Sherwani"
+                        android:text="@string/drySherwani"
+                        android:background="@drawable/dry_cleaning_background"
+                        android:textColor="#000000"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:padding="4dp"
+                        android:textSize="20sp"
+                        android:gravity="center"/>
+                </LinearLayout>
+
+                <!--Second row end-->
+                <!--Second row Start-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="4"
+                    android:padding="1dp">
+
+                    <TextView
+                        android:background="@drawable/dry_cleaning_background"
+                        android:layout_width="0dp"
+                        android:textColor="#000000"
+                        android:layout_weight="2"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Sweater"
+                        android:padding="4dp"
+                        android:textSize="20sp"
+                        android:gravity="center"/>
+
+                    <TextView
+                        android:id="@+id/press_Rate_Sweater"
+                        android:inputType="number"
+                        android:background="@drawable/dry_cleaning_background"
+                        android:textColor="#000000"
+                        android:text="@string/pressSweater"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:padding="4dp"
+                        android:textSize="20sp"
+                        android:gravity="center"/>
+
+                    <TextView
+                        android:id="@+id/dry_Rate_Sweater"
+                        android:background="@drawable/dry_cleaning_background"
+                        android:layout_width="0dp"
+                        android:text="@string/drySweater"
+                        android:layout_weight="1"
+                        android:textColor="#000000"
+                        android:layout_height="match_parent"
+                        android:padding="4dp"
+                        android:textSize="20sp"
+                        android:gravity="center"/>
+                </LinearLayout>
+
+                <!--Second row end-->
+                <!--Second row Start-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="4"
+                    android:padding="1dp">
+
+                    <TextView
+                        android:background="@drawable/dry_cleaning_background"
+                        android:layout_width="0dp"
+                        android:textColor="#000000"
+                        android:layout_weight="2"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Bedsheet_Single"
+                        android:padding="4dp"
+                        android:textSize="20sp"
+                        android:gravity="center"/>
+
+                    <TextView
+                        android:id="@+id/press_Rate_Bedsheet_Single"
+                        android:inputType="number"
+                        android:background="@drawable/dry_cleaning_background"
+                        android:text="@string/pressBedsheet_Single"
+                        android:textColor="#000000"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:padding="4dp"
+                        android:textSize="20sp"
+                        android:gravity="center"/>
+
+                    <TextView
+                        android:id="@+id/dry_Rate_Bedsheet_Single"
+                        android:background="@drawable/dry_cleaning_background"
+                        android:layout_width="0dp"
+                        android:textColor="#000000"
+                        android:text="@string/dryBedsheet_Single"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:padding="4dp"
+                        android:textSize="20sp"
+                        android:gravity="center"/>
+                </LinearLayout>
+
+                <!--Second row end-->
+                <!--Second row Start-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="4"
+                    android:padding="1dp">
+
+                    <TextView
+                        android:background="@drawable/dry_cleaning_background"
+                        android:layout_width="0dp"
+                        android:textColor="#000000"
+                        android:layout_weight="2"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Bedsheet_Double"
+                        android:padding="4dp"
+                        android:textSize="20sp"
+                        android:gravity="center"/>
+
+                    <TextView
+                        android:id="@+id/press_Rate_Bedsheet_Double"
+                        android:inputType="number"
+                        android:background="@drawable/dry_cleaning_background"
+                        android:layout_width="0dp"
+                        android:text="@string/pressBedsheet_Double"
+                        android:textColor="#000000"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:padding="4dp"
+                        android:textSize="20sp"
+                        android:gravity="center"/>
+
+                    <TextView
+                        android:id="@+id/dry_Rate_Bedsheet_Double"
+                        android:background="@drawable/dry_cleaning_background"
+                        android:layout_width="0dp"
+                        android:text="@string/dryBedsheet_Double"
+                        android:layout_weight="1"
+                        android:textColor="#000000"
+                        android:layout_height="match_parent"
+                        android:padding="4dp"
+                        android:textSize="20sp"
+                        android:gravity="center"/>
+                </LinearLayout>
+
+                <!--Second row end-->
+                <!--Second row Start-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="4"
+                    android:padding="1dp">
+
+                    <TextView
+                        android:background="@drawable/dry_cleaning_background"
+                        android:layout_width="0dp"
+                        android:textColor="#000000"
+                        android:layout_weight="2"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Solapur_Single_Chadar"
+                        android:padding="4dp"
+                        android:textSize="20sp"
+                        android:gravity="center"/>
+
+                    <TextView
+                        android:id="@+id/press_Rate_Solapur_Single_Chadar"
+                        android:inputType="number"
+                        android:background="@drawable/dry_cleaning_background"
+                        android:textColor="#000000"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:text="@string/pressSolapur_Single_Chadar"
+                        android:layout_height="match_parent"
+                        android:padding="4dp"
+                        android:textSize="20sp"
+                        android:gravity="center"/>
+
+                    <TextView
+                        android:id="@+id/dry_Rate_Solapur_Single_Chadar"
+                        android:background="@drawable/dry_cleaning_background"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:text="@string/drySolapur_Single_Chadar"
+                        android:textColor="#000000"
+                        android:layout_height="match_parent"
+                        android:padding="4dp"
+                        android:textSize="20sp"
+                        android:gravity="center"/>
+                </LinearLayout>
+
+                <!--Second row end-->
+                <!--Second row Start-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="4"
+                    android:padding="1dp">
+
+                    <TextView
+                        android:background="@drawable/dry_cleaning_background"
+                        android:layout_width="0dp"
+                        android:textColor="#000000"
+                        android:layout_weight="2"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Solapur_Double_Chadar"
+                        android:padding="4dp"
+                        android:textSize="20sp"
+                        android:gravity="center"/>
+
+                    <TextView
+                        android:id="@+id/press_Rate_Solapur_Double_Chadar"
+                        android:inputType="number"
+                        android:background="@drawable/dry_cleaning_background"
+                        android:layout_width="0dp"
+                        android:textColor="#000000"
+                        android:text="@string/pressSolapur_Double_Chadar"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:padding="4dp"
+                        android:textSize="20sp"
+                        android:gravity="center"/>
+
+                    <TextView
+                        android:id="@+id/rate_Rate_Solapur_Double_Chadar"
+                        android:background="@drawable/dry_cleaning_background"
+                        android:text="@string/drySolapur_Double_Chadar"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:textColor="#000000"
+                        android:layout_height="match_parent"
+                        android:padding="4dp"
+                        android:textSize="20sp"
+                        android:gravity="center"/>
+                </LinearLayout>
+
+                <!--Second row end-->
+                <!--Second row Start-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="4"
+                    android:padding="1dp">
+
+                    <TextView
+                        android:background="@drawable/dry_cleaning_background"
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000000"
+                        android:text="@string/Blanket_Single"
+                        android:padding="4dp"
+                        android:textSize="20sp"
+                        android:gravity="center"/>
+
+                    <TextView
+                        android:id="@+id/press_Rate_Blanket_Single"
+                        android:inputType="number"
+                        android:background="@drawable/dry_cleaning_background"
+                        android:text="@string/pressBlanket_Single"
+                        android:textColor="#000000"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:padding="4dp"
+                        android:textSize="20sp"
+                        android:gravity="center"/>
+
+                    <TextView
+                        android:id="@+id/dry_Rate_Blanket_Single"
+                        android:background="@drawable/dry_cleaning_background"
+                        android:layout_width="0dp"
+                        android:textColor="#000000"
+                        android:layout_weight="1"
+                        android:text="@string/dryBlanket_Single"
+                        android:layout_height="match_parent"
+                        android:padding="4dp"
+                        android:textSize="20sp"
+                        android:gravity="center"/>
+                </LinearLayout>
+
+                <!--Second row end-->
+
+                <!--Second row Start-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="4"
+                    android:padding="1dp">
+
+                    <TextView
+                        android:background="@drawable/dry_cleaning_background"
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Blanket_Double"
+                        android:textColor="#000000"
+                        android:padding="4dp"
+                        android:textSize="20sp"
+                        android:gravity="center"/>
+
+                    <TextView
+                        android:id="@+id/press_Rate_Blanket_Double"
+                        android:inputType="number"
+                        android:text="@string/pressBlanket_Double"
+                        android:background="@drawable/dry_cleaning_background"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:padding="4dp"
+                        android:textSize="20sp"
+                        android:textColor="#000000"
+                        android:gravity="center"/>
+
+                    <TextView
+                        android:id="@+id/dry_Rate_Blanket_Double"
+                        android:background="@drawable/dry_cleaning_background"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:text="@string/dryBlanket_Double"
+                        android:layout_height="match_parent"
+                        android:padding="4dp"
+                        android:textColor="#000000"
+                        android:textSize="20sp"
+                        android:gravity="center"/>
+                </LinearLayout>
+
+                <!--Second row end-->
+                <!--Second row Start-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="4"
+                    android:padding="1dp">
+
+                    <TextView
+                        android:background="@drawable/dry_cleaning_background"
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:textColor="#000000"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Car_Seat_cover"
+                        android:padding="4dp"
+                        android:textSize="20sp"
+                        android:gravity="center"/>
+
+                    <TextView
+                        android:inputType="number"
+                        android:background="@drawable/dry_cleaning_background"
+                        android:layout_width="0dp"
+                        android:text="@string/pressCar_Seat_cover"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:textColor="#000000"
+                        android:padding="4dp"
+                        android:textSize="20sp"
+                        android:gravity="center"/>
+
+                    <TextView
+                        android:id="@+id/dry_Rate_Car_Seat_cover"
+                        android:background="@drawable/dry_cleaning_background"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:text="@string/dryCar_Seat_cover"
+                        android:layout_height="match_parent"
+                        android:padding="4dp"
+                        android:textColor="#000000"
+                        android:textSize="20sp"
+                        android:gravity="center"/>
+                </LinearLayout>
+
+                <!--Second row end-->
+                <!--Second row Start-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="4"
+                    android:padding="1dp">
+
+                    <TextView
+                        android:background="@drawable/dry_cleaning_background"
+                        android:layout_width="0dp"
+                        android:textColor="#000000"
+                        android:layout_weight="2"
+                        android:layout_height="wrap_content"
+                        android:text="@string/School_bag"
+                        android:padding="4dp"
+                        android:textSize="20sp"
+                        android:gravity="center"/>
+
+                    <TextView
+                        android:inputType="number"
+                        android:background="@drawable/dry_cleaning_background"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:textColor="#000000"
+                        android:padding="4dp"
+                        android:text="@string/pressSchool_bag"
+                        android:textSize="20sp"
+                        android:gravity="center"/>
+
+                    <TextView
+                        android:id="@+id/dry_Rate_School_bag"
+                        android:background="@drawable/dry_cleaning_background"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:text="@string/drySchool_bag"
+                        android:layout_height="match_parent"
+                        android:textColor="#000000"
+                        android:padding="4dp"
+                        android:textSize="20sp"
+                        android:gravity="center"/>
+                </LinearLayout>
+
+                <!--Second row end-->
+                <!--Second row Start-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="4"
+                    android:padding="1dp">
+
+                    <TextView
+                        android:background="@drawable/dry_cleaning_background"
+                        android:layout_width="0dp"
+                        android:textColor="#000000"
+                        android:layout_weight="2"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Carpet"
+                        android:padding="4dp"
+                        android:textSize="20sp"
+                        android:gravity="center"/>
+
+                    <TextView
+                        android:inputType="number"
+                        android:text="@string/pressCarpet"
+                        android:background="@drawable/dry_cleaning_background"
+                        android:layout_width="0dp"
+                        android:textColor="#000000"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:padding="4dp"
+                        android:textSize="20sp"
+                        android:gravity="center"/>
+
+                    <TextView
+                        android:id="@+id/dry_Rate_Carpet"
+                        android:background="@drawable/dry_cleaning_background"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:textColor="#000000"
+                        android:text="@string/dryCarpet"
+                        android:layout_height="match_parent"
+                        android:padding="4dp"
+                        android:textSize="20sp"
+                        android:gravity="center"/>
+                </LinearLayout>
+
+                <!--Second row end-->
+
+                <!--Second row Start-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="4"
+                    android:padding="1dp">
+
+                    <TextView
+                        android:background="@drawable/dry_cleaning_background"
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:textColor="#000000"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Colour_Black"
+                        android:padding="4dp"
+                        android:textSize="20sp"
+                        android:gravity="center"/>
+
+                    <TextView
+                        android:inputType="number"
+                        android:background="@drawable/dry_cleaning_background"
+                        android:textColor="#000000"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:padding="4dp"
+                        android:text="@string/pressColour_Black"
+                        android:textSize="20sp"
+                        android:gravity="center"/>
+
+                    <TextView
+                        android:id="@+id/dry_Rate_Colour_Black"
+                        android:background="@drawable/dry_cleaning_background"
+                        android:text="@string/dryColour_Black"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:textColor="#000000"
+                        android:layout_height="match_parent"
+                        android:padding="4dp"
+                        android:textSize="20sp"
+                        android:gravity="center"/>
+                </LinearLayout>
+
+                <!--Second row end-->
+
+                <!--Second row Start-->
+
+
+                <!--Second row end-->
+
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+
 
 </android.support.constraint.ConstraintLayout>

@@ -26,6 +26,17 @@
     <string name="saree_roll_press">Saree Roll Press</string>
     <string name="saree_steam_press">Saree Steam Press</string>
 
+    <!--Expandable Activity Start-->
+
+    <string name="ex_drycleaning">It is any cleaning process for clothing and textiles using a chemical solvent other than water.</string>
+    <string name="ex_washing">It is a method of cleaning, usually with water and often some kind of soap or detergent.</string>
+    <string name="ex_ironing">Ironing is the use of a heated tool(an iron)to remove wrinkles from fabric.</string>
+    <string name="ex_coloring">Transform a plain white or light colored garment by dyeing it a bright, vibrant hue.</string>
+    <string name="ex_saree_roll_press">Conventional roll presses are rolls is in a fixed position, with a mating roll being loaded against this fixed roll.</string>
+    <string name="ex_saree_steam_press">A pressing iron with a compatment holding water that is converted to steam by the irons heat and emitted through the soleplate onto the fabric being pressed.</string>
+
+    <!--Expandable Activity End-->
+
     <string name="nav_ratecard">Ratecard</string>
     <string name="nav_press">Press</string>
     <string name="nav_drycleaning">Drycleaning</string>
@@ -35,6 +46,7 @@
     <string name="nav_share">Share</string>
     <string name="nav_feedback">Feedback</string>
     <string name="nav_termsandcondition">Terms and Condition</string>
+    <string name="nav_aboutus">About us</string>
     <string name="nav_language">Language</string>
 
 
@@ -48,5 +60,125 @@
     <string name="FeedbackContact">Contact</string>
     <string name="feedbackFeedback">Feedback</string>
     <string name="feedbackSubmit">Submit</string>
+
+    <!--drycleaning activity Start-->
+
+    <string name="price">Price : </string>
+    <string name="add">Add</string>
+
+
+    <string name="product">Product</string>
+    <string name="quantity">Quantity</string>
+    <string name="rate">Rate</string>
+    <string name="shirt">Shirt</string>
+    <string name="pant">Pant</string>
+    <string name="shirtStarch">Shirt Starch</string>
+    <string name="Pant_Starch">Pant Starch</string>
+    <string name="Kurta">Kurta</string>
+    <string name="Kurtatwopiece">Kurta-2 piece</string>
+    <string name="Top">Top</string>
+    <string name="Salwar">Salwar</string>
+    <string name="Dupatta">Dupatta</string>
+    <string name="Saree">Saree</string>
+    <string name="Shalu">Shalu/Paithani</string>
+    <string name="Navwari">Navwari</string>
+    <string name="Blauz">Blouse</string>
+    <string name="Panjabi_Suit">Panjabi Suit</string>
+    <string name="Dhotar_Sohale">Dhotar Sohale</string>
+    <string name="Coat">Coat</string>
+    <string name="Sherwani">Sherwani</string>
+    <string name="Sweater">Sweater</string>
+    <string name="Bedsheet_Single">Bedsheet Single</string>
+    <string name="Bedsheet_Double">Bedsheet Double</string>
+    <string name="Solapur_Single_Chadar">Solapur Single Chadar</string>
+    <string name="Solapur_Double_Chadar">Solapur Double Chadar</string>
+    <string name="Blanket_Single">Blanket Single</string>
+    <string name="Blanket_Double">Blanket Double</string>
+    <string name="Car_Seat_cover">Car Seat cover</string>
+    <string name="School_bag">School bag</string>
+    <string name="Carpet">Carpet </string>
+    <string name="Colour_Black">Colour (Black)</string>
+    <string name="total">Total</string>
+    <string name="total_price">Total Price: </string>
+
+    <!--drycleaning activity End-->
+
+    <!--Login Activity Start-->
+
+    <string name="login">Login </string>
+    <string name="user_name">User name</string>
+    <string name="password">Password</string>
+
+    <string name="notmember">Not a Member yet? Register here</string>
+
+    <!--Login Activity Start-->
+
+    <!--Drycleaning Rate Start here-->
+
+    <string name="dryshirt">40</string>
+    <string name="drypant">40</string>
+    <string name="dryshirtStarch">50</string>
+    <string name="dryPant_Starch">50</string>
+    <string name="dryKurta">90</string>
+    <string name="dryKurtatwopiece">120</string>
+    <string name="dryTop">40</string>
+    <string name="drySalwar">40</string>
+    <string name="dryDupatta">40</string>
+    <string name="drySaree">120</string>
+    <string name="dryShalu">150/200</string>
+    <string name="dryNavwari">150</string>
+    <string name="dryBlauz">30</string>
+    <string name="dryPanjabi_Suit">120</string>
+    <string name="dryDhotar_Sohale">60</string>
+    <string name="dryCoat">190</string>
+    <string name="drySherwani">200</string>
+    <string name="drySweater">80</string>
+    <string name="dryBedsheet_Single">100</string>
+    <string name="dryBedsheet_Double">120</string>
+    <string name="drySolapur_Single_Chadar">150</string>
+    <string name="drySolapur_Double_Chadar">180</string>
+    <string name="dryBlanket_Single">200</string>
+    <string name="dryBlanket_Double">250</string>
+    <string name="dryCar_Seat_cover">300/500</string>
+    <string name="drySchool_bag">80/100</string>
+    <string name="dryCarpet">250/300 </string>
+    <string name="dryColour_Black">200</string>
+
+
+    <!--Drycleaning rate end-->
+
+
+    <!--Press Rate Start here-->
+
+    <string name="pressshirt">07</string>
+    <string name="presspant">07</string>
+    <string name="pressshirtStarch">10</string>
+    <string name="pressPant_Starch">10</string>
+    <string name="pressKurta">10</string>
+    <string name="pressKurtatwopiece">20</string>
+    <string name="pressTop">07</string>
+    <string name="pressSalwar">07</string>
+    <string name="pressDupatta">07</string>
+    <string name="pressSaree">40</string>
+    <string name="pressShalu">60</string>
+    <string name="pressNavwari">60</string>
+    <string name="pressBlauz">07</string>
+    <string name="pressPanjabi_Suit">25</string>
+    <string name="pressDhotar_Sohale">40</string>
+    <string name="pressCoat">60</string>
+    <string name="pressSherwani">80</string>
+    <string name="pressSweater">10</string>
+    <string name="pressBedsheet_Single">30</string>
+    <string name="pressBedsheet_Double">40</string>
+    <string name="pressSolapur_Single_Chadar">30</string>
+    <string name="pressSolapur_Double_Chadar">40</string>
+    <string name="pressBlanket_Single">-</string>
+    <string name="pressBlanket_Double">-</string>
+    <string name="pressCar_Seat_cover">-</string>
+    <string name="pressSchool_bag">-</string>
+    <string name="pressCarpet">- </string>
+    <string name="pressColour_Black">-</string>
+
+    <!--Press rate end-->
 
 </resources>

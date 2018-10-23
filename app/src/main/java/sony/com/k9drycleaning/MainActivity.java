@@ -22,19 +22,24 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.animation.Animation;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.ViewFlipper;
 
 import java.util.Locale;
 
-public class MainActivity extends AppCompatActivity
-        implements NavigationView.OnNavigationItemSelectedListener {
+public class MainActivity extends AppCompatActivity {
 
 
+//    ImageView imgRateCard,imgPress,imgDrycleaning,imgContactus,imgShare,imgFeedback,imgAboutus,imgLanguage,imgServices;
     ViewFlipper v_flipper;
+
+    LinearLayout linearRateCard,linearPress,linearDrycleaning,linearServices,linearContactUs,linearShare,linearFeedback,linearAboutUs;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
 
         loadLocal();
 
@@ -44,11 +49,21 @@ public class MainActivity extends AppCompatActivity
 
 
 //        Image slider;
-        int images[]={R.drawable.slide1,R.drawable.slide2,R.drawable.slide3};
+        int images[] = {R.drawable.slide1, R.drawable.slide2, R.drawable.slide3};
 
-        v_flipper=findViewById(R.id.v_flipper);
+        v_flipper = findViewById(R.id.v_flipper);
 
-        for (int image:images){
+        linearRateCard=findViewById(R.id.linearRateCard);
+        linearPress=findViewById(R.id.linearPress);
+        linearDrycleaning=findViewById(R.id.linearDrycleaning);
+        linearServices=findViewById(R.id.linearServices);
+        linearContactUs=findViewById(R.id.linearContactUs);
+        linearShare=findViewById(R.id.linearShare);
+        linearFeedback=findViewById(R.id.linearFeedback);
+        linearAboutUs=findViewById(R.id.linearAboutUs);
+
+
+        for (int image : images) {
 
             flipperImage(image);
         }
@@ -65,14 +80,14 @@ public class MainActivity extends AppCompatActivity
 //            }
 //        });
 
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
-        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
-                this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
-        drawer.addDrawerListener(toggle);
-        toggle.syncState();
+//        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+//        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
+//                this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
+//        drawer.addDrawerListener(toggle);
+//        toggle.syncState();
 
-        NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
-        navigationView.setNavigationItemSelectedListener(this);
+//        NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
+//        navigationView.setNavigationItemSelectedListener(this);
     }
 
 
@@ -80,22 +95,20 @@ public class MainActivity extends AppCompatActivity
 
     private void showChangeLanguaqgeDialog() {
 
-        final String[] listItem={"मराठी","English"};
+        final String[] listItem = {"मराठी", "English"};
 
-        AlertDialog.Builder mbuilder=new AlertDialog.Builder(MainActivity.this);
+        AlertDialog.Builder mbuilder = new AlertDialog.Builder(MainActivity.this);
         mbuilder.setTitle("Choose Language....");
         mbuilder.setSingleChoiceItems(listItem, -1, new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int i) {
 
-                if (i==0){
+                if (i == 0) {
 
                     //Marathi
                     setLocal("mr");
                     recreate();
-                }
-
-                else if (i==1){
+                } else if (i == 1) {
 
                     //English
                     setLocal("en");
@@ -107,33 +120,33 @@ public class MainActivity extends AppCompatActivity
             }
         });
 
-        AlertDialog mDialog=mbuilder.create();
+        AlertDialog mDialog = mbuilder.create();
         mDialog.show();
 
     }
 
     private void setLocal(String lang) {
 
-        Locale locale=new Locale(lang);
+        Locale locale = new Locale(lang);
         Locale.setDefault(locale);
-        Configuration config=new Configuration();
-        config.locale=locale;
-        getBaseContext().getResources().updateConfiguration(config,getBaseContext().getResources().getDisplayMetrics());
-        SharedPreferences.Editor editor=getSharedPreferences("Settings",MODE_PRIVATE).edit();
-        editor.putString("My_Lang",lang);
+        Configuration config = new Configuration();
+        config.locale = locale;
+        getBaseContext().getResources().updateConfiguration(config, getBaseContext().getResources().getDisplayMetrics());
+        SharedPreferences.Editor editor = getSharedPreferences("Settings", MODE_PRIVATE).edit();
+        editor.putString("My_Lang", lang);
         editor.apply();
     }
 
-    public void loadLocal(){
+    public void loadLocal() {
 
-        SharedPreferences prefs = getSharedPreferences("Settings",Activity.MODE_PRIVATE);
-        String language =prefs.getString("My_Lang","");
+        SharedPreferences prefs = getSharedPreferences("Settings", Activity.MODE_PRIVATE);
+        String language = prefs.getString("My_Lang", "");
         setLocal(language);
     }
 
-    public void flipperImage(int image){
+    public void flipperImage(int image) {
 
-        ImageView imageView=new ImageView(this);
+        ImageView imageView = new ImageView(this);
         imageView.setBackgroundResource(image);
 
         v_flipper.addView(imageView);
@@ -143,16 +156,95 @@ public class MainActivity extends AppCompatActivity
         v_flipper.setInAnimation(this, android.R.anim.slide_in_left);
         v_flipper.setOutAnimation(this, android.R.anim.slide_out_right);
 
-    }
+        linearRateCard.setOnClickListener(
+                new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
 
-    @Override
-    public void onBackPressed() {
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
-        if (drawer.isDrawerOpen(GravityCompat.START)) {
-            drawer.closeDrawer(GravityCompat.START);
-        } else {
-            super.onBackPressed();
-        }
+                        Intent rateCard=new Intent(MainActivity.this,RateCard.class);
+                        startActivity(rateCard);
+
+                    }
+                }
+        );
+
+        linearPress.setOnClickListener(
+                new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+
+                        Intent press=new Intent(MainActivity.this,Press.class);
+                        startActivity(press);
+
+                        Bundle bundle=getIntent().getExtras();
+                        String uname=bundle.getString("uname");
+
+
+                    }
+                }
+        );
+
+        linearDrycleaning.setOnClickListener(
+                new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+
+                        Intent dryclean=new Intent(MainActivity.this,Drycleaning.class);
+                        startActivity(dryclean);
+
+                    }
+                }
+        );
+
+        linearContactUs.setOnClickListener(
+                new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+
+                        Intent contacts=new Intent(MainActivity.this,ContactUs.class);
+                        startActivity(contacts);
+
+                    }
+                }
+        );
+
+        linearServices.setOnClickListener(
+                new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+
+                        Intent services=new Intent(MainActivity.this,Services.class);
+                        startActivity(services);
+
+                    }
+                }
+        );
+
+        linearFeedback.setOnClickListener(
+                new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+
+                        Intent feedback=new Intent(MainActivity.this,FeedbackActivity.class);
+                        startActivity(feedback);
+
+                    }
+                }
+        );
+
+        linearAboutUs.setOnClickListener(
+                new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+
+                        Intent aboutus=new Intent(MainActivity.this,AboutUs.class);
+                        startActivity(aboutus);
+
+                    }
+                }
+        );
+
+
     }
 
     @Override
@@ -164,73 +256,108 @@ public class MainActivity extends AppCompatActivity
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
 
+        int id = item.getItemId();
+//
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
-            return true;
-        }
-
-        return super.onOptionsItemSelected(item);
-    }
-
-    @SuppressWarnings("StatementWithEmptyBody")
-    @Override
-    public boolean onNavigationItemSelected(MenuItem item) {
-        // Handle navigation view item clicks here.
-        int id = item.getItemId();
-
-        if (id == R.id.ratecard)
-        {
-            Intent rateCard=new Intent(MainActivity.this,RateCard.class);
-            startActivity(rateCard);
-        }
-        else if (id == R.id.press)
-        {
-            Intent press=new Intent(MainActivity.this,Press.class);
-            startActivity(press);
-
-        }
-        else if (id == R.id.dryclean)
-        {
-            Intent dryclean=new Intent(MainActivity.this,Drycleaning.class);
-            startActivity(dryclean);
-
-        }
-        else if (id == R.id.services)
-        {
-            Intent services=new Intent(MainActivity.this,Services.class);
-            startActivity(services);
-
-
-
-        }
-        else if (id == R.id.contacts) {
-
-//            Intent contacts=new Intent(MainActivity.this,Contact_us.class);
-//            startActivity(contacts);
-
-            Intent contacts=new Intent(MainActivity.this,ContactUs.class);
-            startActivity(contacts);
-        }
-        else if (id == R.id.nav_share) {
-
-        }
-
-        else if (id == R.id.nav_feedback){
-            Intent feedback=new Intent(MainActivity.this,FeedbackActivity.class);
-            startActivity(feedback);
-        }
-        else if (id == R.id.changelanguage) {
 
             showChangeLanguaqgeDialog();
-        }
 
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
-        drawer.closeDrawer(GravityCompat.START);
-        return true;
+            return true;
+        }
+        return super.onOptionsItemSelected(item);
     }
 }
+//
+//    @Override
+//    public void onBackPressed() {
+//        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+//        if (drawer.isDrawerOpen(GravityCompat.START)) {
+//            drawer.closeDrawer(GravityCompat.START);
+//        } else {
+//            super.onBackPressed();
+//        }
+//    }
+
+//    @Override
+//    public boolean onCreateOptionsMenu(Menu menu) {
+//        // Inflate the menu; this adds items to the action bar if it is present.
+//        getMenuInflater().inflate(R.menu.main, menu);
+//        return true;
+//    }
+
+//    @Override
+//    public boolean onOptionsItemSelected(MenuItem item) {
+//        // Handle action bar item clicks here. The action bar will
+//        // automatically handle clicks on the Home/Up button, so long
+//        // as you specify a parent activity in AndroidManifest.xml.
+//        int id = item.getItemId();
+//
+//        //noinspection SimplifiableIfStatement
+//        if (id == R.id.action_settings) {
+//            return true;
+//        }
+//
+//        return super.onOptionsItemSelected(item);
+
+//    }
+//
+////
+//    @SuppressWarnings("StatementWithEmptyBody")
+//    @Override
+//    public boolean onNavigationItemSelected(MenuItem item) {
+//        // Handle navigation view item clicks here.
+//        int id = item.getItemId();
+//
+//        if (id == R.id.ratecard)
+//        {
+//            Intent rateCard=new Intent(MainActivity.this,RateCard.class);
+//            startActivity(rateCard);
+//        }
+//        else if (id == R.id.press)
+//        {
+//            Intent press=new Intent(MainActivity.this,Press.class);
+//            startActivity(press);
+//
+//        }
+//        else if (id == R.id.dryclean)
+//        {
+//            Intent dryclean=new Intent(MainActivity.this,Drycleaning.class);
+//            startActivity(dryclean);
+//
+//        }
+//        else if (id == R.id.services)
+//        {
+//            Intent services=new Intent(MainActivity.this,Services.class);
+//            startActivity(services);
+//
+//
+//
+//        }
+//        else if (id == R.id.contacts) {
+//
+////            Intent contacts=new Intent(MainActivity.this,Contact_us.class);
+////            startActivity(contacts);
+//
+//            Intent contacts=new Intent(MainActivity.this,ContactUs.class);
+//            startActivity(contacts);
+//        }
+//        else if (id == R.id.nav_share) {
+//
+//        }
+//
+//        else if (id == R.id.nav_feedback){
+//            Intent feedback=new Intent(MainActivity.this,FeedbackActivity.class);
+//            startActivity(feedback);
+//        }
+//        else if (id == R.id.changelanguage) {
+//
+//            showChangeLanguaqgeDialog();
+//        }
+//
+////        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+////        drawer.closeDrawer(GravityCompat.START);
+////        return true;
+//    }
+//}
